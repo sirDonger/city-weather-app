@@ -17,3 +17,8 @@ export interface DailyInfo {
 export interface CityData extends Coordinates {
   daily: DailyInfo[]
 }
+
+export interface State {
+  weatherData: CityData[];
+  error?: any;
+}
