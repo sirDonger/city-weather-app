@@ -1,4 +1,3 @@
-import { EDEADLK } from 'constants';
 import React from 'react';
 
 const App = () => {
