@@ -1,7 +1,12 @@
 import React from 'react';
+import CityList from './Containers/CityListContainer'
 
 const App = () => {
-  return <div>Hello</div>
+  return (
+    <>
+      <CityList />
+    </>
+  )
 }
 
 export default App 

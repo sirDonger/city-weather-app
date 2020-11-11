@@ -15,10 +15,19 @@ export interface DailyInfo {
 }
 
 export interface CityData extends Coordinates {
-  daily: DailyInfo[]
+  name: string;
+  daily: DailyInfo[];
 }
 
 export interface State {
   weatherData: CityData[];
+  cities: string[];
   error?: any;
+}
+
+export interface HeaderCell {
+  label: string;
+  id: string;
+  numeric: boolean;
+  sort: boolean;
 }

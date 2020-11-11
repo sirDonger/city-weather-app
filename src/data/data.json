@@ -1,0 +1,7 @@
+[
+  {"id": 2759794, "name": "Amsterdam", "state": "", "country": "NL", "coord": {"lon": 4.88969, "lat": 52.374031}},
+  {"id": 2756253, "name": "Eindhoven", "state": "", "country": "NL", "coord": {"lon": 5.47778, "lat": 51.44083}},
+  {"id": 2758186, "name": "Bruinisse", "state": "", "country": "NL", "coord": {"lon": 4.09444, "lat": 51.661671}},
+  {"id": 2758838, "name": "Bleiswijk", "state": "", "country": "NL", "coord": {"lon": 4.53194, "lat": 52.01083}},
+  {"id": 2745912, "name": "Utrecht", "state": "", "country": "NL", "coord": {"lon": 5.12222, "lat": 52.090832}}
+]
