@@ -51,22 +51,19 @@ const WeatherTable = ({ cities, data }: TableProps) => {
       <Table>
         <WeatherTableHeader order={order} orderBy={orderBy} onRequestSort={handleRequestSort} />
         <TableBody>
-          {cities.map((c: string) => (
+          {data.map((d: CityData, i: number) => (
             <>
               <TableRow>
-                <TableCell>{c}</TableCell>
+                <TableCell>{cities[i]}</TableCell>
               </TableRow>
-              {data.map((d: CityData) => {
-                const { daily } = d
-                return daily.map((d: DailyInfo, i: number) => (
-                  <TableRow>
-                    <TableCell align="right">{WEEK_DAYS[i]}</TableCell>
-                    <TableCell align="right">{d.temp}</TableCell>
-                    <TableCell align="right">{d.windSpeed}</TableCell>
-                    <TableCell align="right">{d.weather}</TableCell>
-                  </TableRow>
-                ))
-              })} 
+              {d.daily.map((d: DailyInfo, i: number) => (
+                <TableRow>
+                  <TableCell align="right">{WEEK_DAYS[i]}</TableCell>
+                  <TableCell align="right">{d.temp}</TableCell>
+                  <TableCell align="right">{d.windSpeed}</TableCell>
+                  <TableCell align="right">{d.weather}</TableCell>
+                </TableRow>
+              ))}
             </>
           ))}
         </TableBody>

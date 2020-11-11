@@ -15,7 +15,7 @@ export default function request(params: Coordinates) {
           temp: d.temp.day,
           windSpeed: d.wind_speed,
           weather: d.weather[0].main
-        }))
+        })).slice(0, 7) // slice needed because server sends info about 8 coming days instead of 7
       }
     })
 }
