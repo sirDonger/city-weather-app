@@ -4,11 +4,11 @@ import WeatherTable from './Containers/WeatherTableContainer'
 
 const App = () => {
   return (
-    <>
+    <div className="container pt-5 d-flex">
       <CityList />
       <WeatherTable />
-    </>
+    </div>
   )
 }
 
-export default App 
+export default App

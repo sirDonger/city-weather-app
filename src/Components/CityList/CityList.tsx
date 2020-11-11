@@ -8,7 +8,7 @@ import CityListItem from './CityListItem'
 
 const CityList = ({ cities, addCity, removeCity, fetchWeatherData, removeWeatherData }: ListProps) => {
   return (
-    <FormControl component='fieldset'>
+    <FormControl component='fieldset' className="mr-5">
       <FormLabel component='legend'>Netherlands cities</FormLabel>
       <FormGroup>
         {data.map((c: CityInfo) => (

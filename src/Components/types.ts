@@ -27,6 +27,6 @@ export type Order = 'asc' | 'desc'
 
 export interface HeaderProps {
   order: Order;
-  orderBy: keyof DailyInfo;
+  orderBy: keyof DailyInfo | string;
   onRequestSort(property: keyof DailyInfo | string): void;
 }
