@@ -7,6 +7,7 @@ import { FormControl, FormGroup, FormLabel } from '@material-ui/core'
 import CityListItem from './CityListItem'
 
 const CityList = ({ cities, addCity, removeCity, fetchWeatherData, removeWeatherData }: ListProps) => {
+  // needed for initial request on compontent mount
   useEffect(() => {
     for (let city of data) {
       cities.includes(city.name) && fetchWeatherData(city.coord)
