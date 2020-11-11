@@ -27,7 +27,7 @@ export interface State {
 
 export interface HeaderCell {
   label: string;
-  id: string;
+  id: keyof DailyInfo | string;
   numeric: boolean;
   sort: boolean;
 }

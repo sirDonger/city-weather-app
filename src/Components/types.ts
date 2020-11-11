@@ -1,5 +1,6 @@
-import { Action, Coordinates } from '../types'
+import { Action, Coordinates, CityData, DailyInfo } from '../types'
 
+// List interfaces
 export interface ListProps {
   cities: string[];
   addCity(): Action;
@@ -14,4 +15,18 @@ export interface CityInfo {
   state: string;
   country: string;
   coord: Coordinates
+}
+
+// Weather table interfaces
+export interface TableProps {
+  cities: string[];
+  data: CityData[]
+}
+
+export type Order = 'asc' | 'desc'
+
+export interface HeaderProps {
+  order: Order;
+  orderBy: keyof DailyInfo;
+  onRequestSort(property: keyof DailyInfo | string): void;
 }

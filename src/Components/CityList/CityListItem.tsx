@@ -14,6 +14,7 @@ interface ItemProps {
 
 const CityListItem = ({ info, activeCity, addCity, removeCity, fetchWeatherData, removeWeatherData }: ItemProps) => {
   const [active, setActive] = useState<boolean>(activeCity)
+  // needed to emulate componentDidMount to initially request data for Amsterdam on mount
   useEffect(() => {
     if (activeCity) {
       fetchWeatherData(info.coord)
