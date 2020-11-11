@@ -15,7 +15,6 @@ export interface DailyInfo {
 }
 
 export interface CityData extends Coordinates {
-  name: string;
   daily: DailyInfo[];
 }
 

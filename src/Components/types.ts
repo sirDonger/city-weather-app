@@ -5,7 +5,7 @@ export interface ListProps {
   cities: string[];
   addCity(): Action;
   removeCity(): Action;
-  fetchWeatherData(): Action;
+  fetchWeatherData({ lat, lon }: Coordinates): Action;
   removeWeatherData(): Action;
 }
 
@@ -20,7 +20,7 @@ export interface CityInfo {
 // Weather table interfaces
 export interface TableProps {
   cities: string[];
-  data: CityData[]
+  data: CityData[];
 }
 
 export type Order = 'asc' | 'desc'

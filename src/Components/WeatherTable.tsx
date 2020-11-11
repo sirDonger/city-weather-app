@@ -10,7 +10,7 @@ import {
   TableSortLabel
 } from '@material-ui/core'
 import { TableProps, Order, HeaderProps } from './types'
-import { HeaderCell, DailyInfo } from '../types'
+import { HeaderCell, DailyInfo, CityData } from '../types'
 import { TABLE_HEADERS, WEEK_DAYS } from '../constants'
 
 const WeatherTableHeader = ({ order, orderBy, onRequestSort }: HeaderProps) => {
@@ -51,23 +51,26 @@ const WeatherTable = ({ cities, data }: TableProps) => {
       <Table>
         <WeatherTableHeader order={order} orderBy={orderBy} onRequestSort={handleRequestSort} />
         <TableBody>
-          {data.map((d, i) => (
+          {cities.map((c: string) => (
             <>
               <TableRow>
-                <TableCell>{cities[i]}</TableCell>
+                <TableCell>{c}</TableCell>
               </TableRow>
-              {d.daily.map((d, i) => (
-                <TableRow>
-                  <TableCell align="right">{WEEK_DAYS[i]}</TableCell>
-                  <TableCell align="right">{d.temp}</TableCell>
-                  <TableCell align="right">{d.windSpeed}</TableCell>
-                  <TableCell align="right">{d.weather}</TableCell>
-                </TableRow>
-              ))}
+              {data.map((d: CityData) => {
+                const { daily } = d
+                return daily.map((d: DailyInfo, i: number) => (
+                  <TableRow>
+                    <TableCell align="right">{WEEK_DAYS[i]}</TableCell>
+                    <TableCell align="right">{d.temp}</TableCell>
+                    <TableCell align="right">{d.windSpeed}</TableCell>
+                    <TableCell align="right">{d.weather}</TableCell>
+                  </TableRow>
+                ))
+              })} 
             </>
           ))}
         </TableBody>
-      </Table>
+      </Table> 
     </TableContainer>
   )
 }
