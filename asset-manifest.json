@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/city-weather-app/static/css/main.ac5e4075.chunk.css",
+    "main.js": "/city-weather-app/static/js/main.5a625ca8.chunk.js",
+    "main.js.map": "/city-weather-app/static/js/main.5a625ca8.chunk.js.map",
+    "runtime-main.js": "/city-weather-app/static/js/runtime-main.7d9d5a93.js",
+    "runtime-main.js.map": "/city-weather-app/static/js/runtime-main.7d9d5a93.js.map",
+    "static/js/2.bdc7786c.chunk.js": "/city-weather-app/static/js/2.bdc7786c.chunk.js",
+    "static/js/2.bdc7786c.chunk.js.map": "/city-weather-app/static/js/2.bdc7786c.chunk.js.map",
+    "static/js/3.49a159ae.chunk.js": "/city-weather-app/static/js/3.49a159ae.chunk.js",
+    "static/js/3.49a159ae.chunk.js.map": "/city-weather-app/static/js/3.49a159ae.chunk.js.map",
+    "index.html": "/city-weather-app/index.html",
+    "static/css/main.ac5e4075.chunk.css.map": "/city-weather-app/static/css/main.ac5e4075.chunk.css.map",
+    "static/js/2.bdc7786c.chunk.js.LICENSE.txt": "/city-weather-app/static/js/2.bdc7786c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7d9d5a93.js",
+    "static/js/2.bdc7786c.chunk.js",
+    "static/css/main.ac5e4075.chunk.css",
+    "static/js/main.5a625ca8.chunk.js"
+  ]
+}
